@@ -32,13 +32,3 @@ O objetivo é construir um classificador capaz de identificar transações fraud
    - F1-score
 6. **Análise da importância das features** (opcional)
 7. **Salvamento do modelo treinado** para uso futuro
-
----
-
-## Como rodar o projeto
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/seu_usuario/detecao-fraude-cartao.git
-   cd detecao-fraude-cartao
