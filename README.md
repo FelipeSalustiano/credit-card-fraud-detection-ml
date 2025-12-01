@@ -6,29 +6,48 @@ Este projeto implementa um modelo de Machine Learning para detectar fraudes em t
 
 ## Descrição
 
-O objetivo é construir um classificador capaz de identificar transações fraudulentas em meio a um conjunto altamente desbalanceado, onde fraudes representam menos de 1% dos dados.
+O objetivo é construir um modelo capaz de identificar transações fraudulentas em meio a um conjunto altamente desbalanceado, onde fraudes representam menos de 1% dos dados.
 
 ---
 
 ## Tecnologias Utilizadas
 
 - Python 3
-- Pandas, NumPy (manipulação de dados)
-- Scikit-learn (modelagem e avaliação)
-- Imbalanced-learn (SMOTE para balanceamento)
-- Matplotlib (visualização)
+- Pandas
+- NumPy 
+- Scikit-learn
+- XGBoost
+- LightGBM
+- CatBoost 
+- Matplotlib 
+- Seaborn
+
 
 ---
 
 ## Passos do Projeto
 
 1. **Carregamento e análise exploratória dos dados**
-2. **Pré-processamento**: normalização dos dados e balanceamento com SMOTE
-3. **Divisão dos dados** em treino e teste, mantendo proporção das classes
-4. **Treinamento do modelo Random Forest** com dados balanceados
+2. **Divisão dos dados** 
+3. **Validação cruzada** 
+4. **Treinamento do modelo CatBoost** 
 5. **Avaliação do modelo** usando métricas específicas para dados desbalanceados:
-   - AUC-ROC
    - Recall
-   - F1-score
-6. **Análise da importância das features** (opcional)
-7. **Salvamento do modelo treinado** para uso futuro
+   - Matriz de Confusão
+
+
+---
+
+## Estrutura do Projeto
+
+
+| Pasta / Arquivo        | Descrição |
+|------------------------|-----------|
+| `data/`                | Contém o dataset bruto |
+| └── `creditcard.csv`   | Dataset oficial de transações de cartão |
+| `notebook/`            | Notebooks de análise e modelagem |
+| └── `analise.ipynb`    | Notebook principal do projeto |
+| `src/`                 | Scripts auxiliares |
+| └── `utils.py`         | Funções usadas no projeto |
+| `venv/`                | Ambiente virtual Python |
+| `README.md`            | Documentação do projeto 
