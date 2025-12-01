@@ -43,11 +43,8 @@ O objetivo é construir um modelo capaz de identificar transações fraudulentas
 
 | Pasta / Arquivo        | Descrição |
 |------------------------|-----------|
-| `data/`                | Contém o dataset bruto |
-| └── `creditcard.csv`   | Dataset oficial de transações de cartão |
 | `notebook/`            | Notebooks de análise e modelagem |
 | └── `analise.ipynb`    | Notebook principal do projeto |
 | `src/`                 | Scripts auxiliares |
 | └── `utils.py`         | Funções usadas no projeto |
-| `venv/`                | Ambiente virtual Python |
 | `README.md`            | Documentação do projeto 
